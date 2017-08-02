@@ -1,0 +1,36 @@
+/* grid using neat */
+
+$neat-grid: (
+  columns: 12,
+  gutter: 20px,
+);
+
+/* temp */
+body {
+  @include grid-visual;
+}
+
+header, section, footer {
+  @include grid-container;
+}
+
+.simple_form,
+.footer {
+  @include grid-column(12);
+}
+
+.logo {
+  @include grid-column(6);
+}
+
+.nav {
+  @include grid-column(6);
+}
+
+.story {
+  @include grid-column(8);
+}
+
+.product {
+  @include grid-column(4);
+}

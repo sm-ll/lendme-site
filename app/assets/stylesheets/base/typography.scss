@@ -1,0 +1,17 @@
+/* typography */
+
+body, h1, h2, h3, p {
+  font-family: $stack;
+  font-size: $body;
+  line-height: $baseline;
+}
+
+p {
+  margin-bottom: $baseline*2;
+}
+
+h1 {
+  font-size: $h1;
+  line-height: $h1*1.25;
+}
+
