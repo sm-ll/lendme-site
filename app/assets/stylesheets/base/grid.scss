@@ -1,36 +1,46 @@
 /* grid using neat */
 
 $neat-grid: (
-  columns: 12,
-  gutter: 20px,
+  columns: 8,
+  gutter: $gutter,
 );
 
-/* temp */
+/* temp
 body {
   @include grid-visual;
 }
-
-header, section, footer {
+*/
+header {
   @include grid-container;
+}
+
+section, footer {
+  float: left;
+  width: 100%;
 }
 
 .simple_form,
 .footer {
-  @include grid-column(12);
-}
-
-.logo {
-  @include grid-column(6);
-}
-
-.nav {
-  @include grid-column(6);
-}
-
-.story {
   @include grid-column(8);
 }
 
-.product {
+.logowrap {
   @include grid-column(4);
+}
+
+.nav {
+  @include grid-column(4);
+}
+
+.mainstory {
+  @include grid-column(5);
+}
+
+.product {
+  @include grid-column(3);
+}
+
+.story {
+  @include grid-column(6);
+  @include grid-push(1);
 }

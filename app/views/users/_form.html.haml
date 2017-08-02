@@ -1,6 +1,9 @@
 %section
   = simple_form_for @user do |f|
     .field
-      = f.input :name
+      //= f.input :name
+      //I just put this in so I could attach a 'feedback' class to style
+      //= text_field_tag :feedback, "", class: 'feedback' 
+
     .actions
-      = f.button :submit
+      = f.button :submit, :class => "button"

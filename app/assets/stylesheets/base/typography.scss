@@ -4,6 +4,7 @@ body, h1, h2, h3, p {
   font-family: $stack;
   font-size: $body;
   line-height: $baseline;
+  color: $black;
 }
 
 p {
@@ -13,5 +14,14 @@ p {
 h1 {
   font-size: $h1;
   line-height: $h1*1.25;
+}
+
+h2 {
+  font-size: $h2;
+  line-height: $h2*1.5;
+}
+
+.mainstory h1 {
+  color: $white;
 }
 

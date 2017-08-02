@@ -1,5 +1,12 @@
 /* image */
 
 .logo {
-  //background: url("images/color/logo.svg");
+  height: $baseline*3;
+  width: auto;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
 }

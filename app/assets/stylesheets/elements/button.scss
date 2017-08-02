@@ -1,1 +1,28 @@
 /* button */
+
+.button {
+  @include radius;
+  @include ease;
+  border: $border-width $border-style $white;
+  background: none;
+  font-family: $stack;
+  font-size: $body;
+  color: $white;
+  padding: $baseline*0.5;
+  min-width: $baseline*10;
+  &:hover {
+    @include ease;
+    cursor: pointer;
+    border-color: $black;
+    color: $black;
+  }
+}
+
+.bottom .button {
+  border-color: $brand;
+  color: $brand;
+  &:hover {
+    border-color: $black;
+    color: $black;
+  }
+}

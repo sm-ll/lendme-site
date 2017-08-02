@@ -1,0 +1,14 @@
+/* mixins */
+
+@mixin radius {
+  border-radius: $baseline*4;
+  -webkit-border-radius: $baseline*4;
+  -moz-radius: $baseline*4;
+}
+
+@mixin ease {
+  transition: all $speed $curve;
+  -webkit-transition: all $speed $curve;
+  -moz-transition: all $speed $curve;
+  -o-transition: all $speed $curve;
+}
