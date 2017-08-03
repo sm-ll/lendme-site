@@ -1,0 +1,2 @@
+module ResearchAnswersHelper
+end

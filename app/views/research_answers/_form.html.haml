@@ -1,0 +1,10 @@
+= simple_form_for(@research_answer) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :q1_value, as: :radio_buttons, label: "Are you registering your interest as a helper or as someone with a disability who'd like some help?"
+
+    = f.input :q2_value, as: :radio_buttons, label: "Blah 2?", collection: [["Answer 1", 1], ["Answer 2", 2]]
+
+  .form-actions
+    = f.button :submit
