@@ -19,7 +19,7 @@ section, footer {
   width: 100%;
 }
 
-.simple_form,
+.interest,
 .footer {
   @include grid-column(8);
 }
@@ -45,7 +45,16 @@ section, footer {
   @include grid-push(1);
 }
 
-.bottom .interest .simple_form {
-  @include grid-column(6);
-  @include grid-push(1);
+.full {
+  @include grid-column(8);
+}
+
+.bottom {
+  .logowrap {
+    @include grid-column(8);
+  }
+  .interest {
+    @include grid-column(6);
+    @include grid-push(1);
+  }
 }

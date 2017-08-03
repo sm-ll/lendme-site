@@ -1,7 +1,7 @@
 /* layout */
 
 body {
-  background: $brand;
+  @include gradient;
 }
 
 header {
@@ -29,11 +29,21 @@ section {
   margin-bottom: $baseline*2;
 }
 
+.full {
+  padding-top: $baseline*2;
+  padding-bottom: $baseline;
+}
+
 .bottom {
-  background: $brand-2;
+  background: $white;
   margin-top: 0;
   margin-bottom: 0;
   padding-top: $baseline*2;
+  .logo {
+    margin-left: auto;
+    margin-right: auto;
+    height: $baseline*4;
+  }
 }
 
 .product {

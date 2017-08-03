@@ -1,9 +1,9 @@
 /* mixins */
 
 @mixin radius {
-  border-radius: $baseline*4;
-  -webkit-border-radius: $baseline*4;
-  -moz-radius: $baseline*4;
+  border-radius: $baseline*0.25;
+  -webkit-border-radius: $baseline*0.25;
+  -moz-radius: $baseline*0.25;
 }
 
 @mixin ease {
@@ -11,4 +11,15 @@
   -webkit-transition: all $speed $curve;
   -moz-transition: all $speed $curve;
   -o-transition: all $speed $curve;
+}
+
+@mixin gradient {
+  background: $brand;
+  background: -moz-linear-gradient(left, $brand 0%, $brand-light 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, $brand), color-stop(100%, $brand-light));
+  background: -webkit-linear-gradient(left, $brand 0%, $brand-light 100%);
+  background: -o-linear-gradient(left, $brand 0%, $brand-light 100%);
+  background: -ms-linear-gradient(left, $brand 0%, $brand-light 100%);
+  background: linear-gradient(to right, $brand 0%, $brand-light 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand', endColorstr='$brand-light', GradientType=1 );
 }

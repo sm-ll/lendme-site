@@ -14,15 +14,18 @@ a, a:active, a:hover, a:focus {
 
 p {
   margin-bottom: $baseline;
-}
-
-.bottom p {
-  color: $white;
+  span {
+    color: $brand;
+  }
+  &.question {
+    border-left: $border-width*3 $border-style $white;
+    padding-left: $gutter*0.5;
+  }
 }
 
 h1 {
   font-size: $h1;
-  line-height: $h1*1.25;
+  line-height: $h1*1.4;
 }
 
 h2 {
@@ -31,6 +34,10 @@ h2 {
 }
 
 .mainstory h1 {
+  color: $white;
+}
+
+.full p {
   color: $white;
 }
 
