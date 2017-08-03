@@ -16,12 +16,29 @@ section {
   margin-bottom: $baseline;
 }
 
-.stories {
+.stories,
+.register {
   background: $white;
   padding-top: $baseline*3;
   padding-bottom: $baseline;
   margin-top: 0;
   margin-bottom: 0;
+}
+
+.register form {
+  @include radius;
+  box-sizing: border-box;
+  border: $border-width $border-style $brand;
+  padding: $baseline;
+  .research_answer_q1_value {
+    float: left;
+    margin: $baseline 0;
+  }
+  .radio {
+    float: left;
+    width: 100%;
+    margin: $baseline*0.25 0;
+  }
 }
 
 .interest {

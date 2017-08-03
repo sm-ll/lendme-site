@@ -20,14 +20,12 @@ section, footer {
 }
 
 .interest,
+.full,
 .footer {
   @include grid-column(8);
 }
 
-.logowrap {
-  @include grid-column(4);
-}
-
+.logowrap,
 .nav {
   @include grid-column(4);
 }
@@ -45,10 +43,6 @@ section, footer {
   @include grid-push(1);
 }
 
-.full {
-  @include grid-column(8);
-}
-
 .bottom {
   .logowrap {
     @include grid-column(8);
@@ -57,4 +51,9 @@ section, footer {
     @include grid-column(6);
     @include grid-push(1);
   }
+}
+
+.register form {
+  @include grid-column(4);
+  @include grid-push(2);
 }
