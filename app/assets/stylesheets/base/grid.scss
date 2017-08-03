@@ -44,3 +44,8 @@ section, footer {
   @include grid-column(6);
   @include grid-push(1);
 }
+
+.bottom .interest .simple_form {
+  @include grid-column(6);
+  @include grid-push(1);
+}

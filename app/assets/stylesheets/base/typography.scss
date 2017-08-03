@@ -7,8 +7,17 @@ body, h1, h2, h3, p {
   color: $black;
 }
 
+a, a:active, a:hover, a:focus {
+  color: $white;
+  text-decoration: none;
+}
+
 p {
-  margin-bottom: $baseline*2;
+  margin-bottom: $baseline;
+}
+
+.bottom p {
+  color: $white;
 }
 
 h1 {
@@ -23,5 +32,11 @@ h2 {
 
 .mainstory h1 {
   color: $white;
+}
+
+ul {
+  li {
+    display: inline;
+  }
 }
 

@@ -5,20 +5,35 @@ body {
 }
 
 header {
-  margin-top: $baseline*2;
-  margin-bottom: $baseline*2;
 }
 
-section, .story {
+.mainstory {
+  margin-top: $baseline*2;
+}
+
+section {
   margin-top: $baseline;
   margin-bottom: $baseline;
 }
 
-.bottom {
+.stories {
   background: $white;
-  padding-top: $baseline*4;
-  padding-bottom: $baseline*4;
+  padding-top: $baseline*3;
+  padding-bottom: $baseline;
+  margin-top: 0;
   margin-bottom: 0;
+}
+
+.interest {
+  margin-top: $baseline;
+  margin-bottom: $baseline*2;
+}
+
+.bottom {
+  background: $brand-2;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: $baseline*2;
 }
 
 .product {
@@ -26,6 +41,4 @@ section, .story {
 }
 
 .footer {
-  margin-top: $baseline;
-  margin-bottom: $baseline;
 }

@@ -4,7 +4,11 @@
 $white: #fff;
 $black: #505050;
 $gray: #bbb;
+$footer: #000;
+
+/* modifiers */
+$gray-darken: darken($gray, 30%);
 
 /* brand */
 $brand: #009ca6;
-$brand-2: #000;
+$brand-2: #e0a410;

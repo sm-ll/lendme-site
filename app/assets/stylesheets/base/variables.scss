@@ -1,11 +1,12 @@
 /* variables */
 
-$body: 20px;
-$baseline: 25px;
+$body: 25px;
+$baseline: $body*1.5;
 $gutter: $baseline*1.5;
 
 $h1: 40px;
 $h2: 25px;
+$small: 18px;
 
 $stack: 'Varela Round', sans-serif;
 

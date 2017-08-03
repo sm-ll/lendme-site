@@ -1,5 +1,8 @@
 /* footer */
 
 footer {
-  background: $brand-2;
+  background: $footer;
+  a {
+    color: $gray-darken;
+  }
 }
