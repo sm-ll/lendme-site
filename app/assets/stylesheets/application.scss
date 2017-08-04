@@ -12,14 +12,12 @@
  *
  */
 
-// global style first
+/* keep in order */
 @import "global/import";
-
 @import 'neat';
 @import "base/import";
-@import "elements/import";
 @import "pages/import";
 @import "partials/import";
+@import "elements/import";
 
-// responsive style last
 @import "base/responsive";

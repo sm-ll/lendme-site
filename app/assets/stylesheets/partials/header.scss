@@ -1,1 +1,16 @@
 /* header */
+
+.header {
+  .nav {
+    ul {
+      float: right;
+      li a {
+        color: $white;
+        margin-left: $gutter*0.25;
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+  }
+}

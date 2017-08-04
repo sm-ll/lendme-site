@@ -6,7 +6,7 @@ $gutter: $baseline*1.5;
 
 $h1: 30px;
 $h2: 25px;
-$small: 22px;
+$small: 20px;
 
 $stack: 'Varela Round', sans-serif;
 
@@ -15,3 +15,7 @@ $border-style: solid;
 
 $speed: 500ms;
 $curve: ease;
+
+/* header */
+$header-height: $baseline*2;
+// this can also be used for placing header nav vertically aligned to the logo

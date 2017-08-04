@@ -17,7 +17,8 @@ section {
 }
 
 .stories,
-.register {
+.register,
+.graphic {
   background: $white;
   padding-top: $baseline*3;
   padding-bottom: $baseline;
@@ -25,25 +26,9 @@ section {
   margin-bottom: 0;
 }
 
-.register form {
-  @include radius;
-  box-sizing: border-box;
-  border: $border-width $border-style $brand;
-  padding: $baseline;
-  .research_answer_q1_value {
-    float: left;
-    margin: $baseline 0;
-  }
-  .radio {
-    float: left;
-    width: 100%;
-    margin: $baseline*0.25 0;
-  }
-}
-
 .interest {
-  margin-top: $baseline;
-  margin-bottom: $baseline*2;
+  margin-top: 0;
+  margin-bottom: $baseline*4;
 }
 
 .full {
@@ -56,11 +41,6 @@ section {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: $baseline*2;
-  .logo {
-    margin-left: auto;
-    margin-right: auto;
-    height: $baseline*4;
-  }
 }
 
 .product {

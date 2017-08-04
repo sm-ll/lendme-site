@@ -8,6 +8,7 @@ body, h1, h2, h3, p {
 }
 
 a, a:active, a:hover, a:focus {
+  @include ease;
   color: $white;
   text-decoration: none;
 }
@@ -39,11 +40,5 @@ h2 {
 
 .full p {
   color: $white;
-}
-
-ul {
-  li {
-    display: inline;
-  }
 }
 

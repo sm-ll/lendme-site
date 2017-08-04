@@ -13,13 +13,22 @@
   -o-transition: all $speed $curve;
 }
 
+@mixin spot {
+  background: $brand;
+  height: $baseline;
+  width: $baseline;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-radius: 100%;
+}
+
 @mixin gradient {
   background: $brand;
-  background: -moz-linear-gradient(left, $brand 0%, $brand-light 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, $brand), color-stop(100%, $brand-light));
-  background: -webkit-linear-gradient(left, $brand 0%, $brand-light 100%);
-  background: -o-linear-gradient(left, $brand 0%, $brand-light 100%);
-  background: -ms-linear-gradient(left, $brand 0%, $brand-light 100%);
-  background: linear-gradient(to right, $brand 0%, $brand-light 100%);
+  background: -moz-linear-gradient(left, $brand 0%, $brand-variant 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, $brand), color-stop(100%, $brand-variant));
+  background: -webkit-linear-gradient(left, $brand 0%, $brand-variant 100%);
+  background: -o-linear-gradient(left, $brand 0%, $brand-variant 100%);
+  background: -ms-linear-gradient(left, $brand 0%, $brand-variant 100%);
+  background: linear-gradient(to right, $brand 0%, $brand-variant 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$brand', endColorstr='$brand-light', GradientType=1 );
 }

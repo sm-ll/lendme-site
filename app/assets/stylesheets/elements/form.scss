@@ -4,3 +4,19 @@
   border: none;
   padding: $baseline*4;
 }
+
+.register form {
+  @include radius;
+  box-sizing: border-box;
+  border: $border-width $border-style $brand;
+  padding: $baseline;
+  .research_answer_q1_value {
+    float: left;
+    margin: $baseline 0;
+  }
+  .radio {
+    float: left;
+    width: 100%;
+    margin: $baseline*0.25 0;
+  }
+}

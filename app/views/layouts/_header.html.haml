@@ -1,5 +1,8 @@
 %header.header
   .logowrap
-    =image_tag('white/logo.svg', :alt => 'Lend A Hand logo', class: 'logo')
+    =link_to root_path, :title => "Lend a hand" do
+      =image_tag "white/logo.svg", :alt => "Lend A Hand logo", :class => "logo"
   %nav.nav
-    Lend a hand
+    %ul
+      %li
+        =link_to "Lend a hand", root_path, :title => "Lend a hand"
