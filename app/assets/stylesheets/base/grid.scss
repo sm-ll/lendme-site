@@ -25,6 +25,9 @@ section, footer {
 
 .product {
   @include grid-column(3);
+  &.small {
+    @include grid-column(2);
+  }
 }
 
 .story {
@@ -38,12 +41,11 @@ section, footer {
 }
 
 .bottom {
-  .logowrap {
-    @include grid-column(8);
-  }
-  .interest {
-    @include grid-column(6);
+  .product {
     @include grid-push(1);
+  }
+  .story, .interest {
+    @include grid-column(4);
   }
 }
 

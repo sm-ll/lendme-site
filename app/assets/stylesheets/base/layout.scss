@@ -41,10 +41,9 @@ section {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: $baseline*2;
-}
-
-.product {
-  height: calc(0vh);
+  .story {
+    margin-top: $baseline*2;
+  }
 }
 
 .footer {

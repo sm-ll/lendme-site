@@ -3,7 +3,7 @@
     %h1
       Pairing willing helpers with people with a disability to make commuting by public transport more comfortable and less stressful.
   %section.product
-    %img{:src => "images/mockuphone/knows-you-are-coming.png", :alt => "knows you are coming"}
+    =image_tag "app-grabs/knows-you-are-coming.png", :alt => "Lend a hand help"
 
   %section.interest
     = link_to "I'm interested!", new_research_answer_path, class: 'button'
@@ -23,6 +23,8 @@
     %p.question
       Are you someone who would be willing to accompany someone with a disability taking the same route as you to help them feel more comfortable, less stressed and more supported?
   %section.bottom
+    %section.product.small
+      =image_tag "app-grabs/home-screen.png", :alt => "Lend a hand home"
     .story
       %p
         We are building a platform that will connect every day commuters willing to help someone with a disability on their trip.

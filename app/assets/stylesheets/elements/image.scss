@@ -10,3 +10,10 @@ img {
   width: 100%;
   height: auto;
 }
+
+.product {
+  height: calc(0vh);
+  &.small {
+    height: auto;
+  }
+}
