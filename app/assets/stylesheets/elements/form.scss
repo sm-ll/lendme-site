@@ -10,13 +10,31 @@
   box-sizing: border-box;
   border: $border-width $border-style $brand;
   padding: $baseline;
+  label.radio_buttons {
+    float: left;
+    margin-bottom: $baseline*0.5;
+  }
   .research_answer_q1_value {
     float: left;
-    margin: $baseline 0;
+    margin-bottom: $baseline;
   }
   .radio {
     float: left;
     width: 100%;
-    margin: $baseline*0.25 0;
+    margin-bottom: $baseline*0.25;
+    label input {
+      float: left;
+      margin: $baseline*0.25;
+      margin-right: $gutter*0.5;
+      cursor: pointer;
+    }
+    label {
+      float: left;
+      line-height: $baseline;
+    }
+  }
+  .form-actions {
+    float: left;
+    margin-top: $baseline;
   }
 }

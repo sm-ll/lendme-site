@@ -5,11 +5,6 @@ $neat-grid: (
   gutter: $gutter,
 );
 
-/* temp
-body {
-  @include grid-visual;
-}
-*/
 header {
   @include grid-container;
 }

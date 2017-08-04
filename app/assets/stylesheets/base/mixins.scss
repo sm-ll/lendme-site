@@ -13,6 +13,15 @@
   -o-transition: all $speed $curve;
 }
 
+@mixin circle {
+  border: $border-width $border-style $brand;
+  height: $baseline;
+  width: $baseline;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-radius: 100%;
+}
+
 @mixin spot {
   background: $brand;
   height: $baseline;
