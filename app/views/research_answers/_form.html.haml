@@ -4,7 +4,7 @@
   .form-inputs
     = f.input :q1_value, as: :radio_buttons, label: "Are you registering your interest as a helper or as someone with a disability who'd like some help?", collection: [["I’d like to be a helper!", 1], ["I’d like some help!", 2]]
 
-    = f.input :q2_value, as: :radio_buttons, label: "Are you currently a government employee or have you had a policy check for your job or another volunteering role?", collection: [["Yes", 1], ["No", 2]]
+    = f.input :q2_value, as: :radio_buttons, label: "Are you currently a government employee or have you had a national police check check for your job or another volunteering role?", collection: [["Yes", 1], ["No", 2]]
 
   .form-actions
     = f.button :submit, :class => "button", :value => "Submit your answers"
