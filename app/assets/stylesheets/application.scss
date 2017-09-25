@@ -1,23 +1,45 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- */
+@import 'tachyons/tachyons.min.css';
+@import 'tachyons/mailchimp.css';
 
-/* keep in order */
-@import "global/import";
-@import 'neat';
-@import "base/import";
-@import "pages/import";
-@import "partials/import";
-@import "elements/import";
 
-@import "base/responsive";
+// $font:'Lato', sans-serif;
+$color-primary:#18cca4;
+$color-secondary:#4b06b7;
+$color-text-dark:#494745;
+$color-text-light:#948f8b;
+
+
+body { background:#fafafa; color:$color-text-dark; }
+
+.fg-header { align-items:center; display:flex; z-index:1; }
+.fg-lah-logo { background: image-url('media/logo.svg'); background-size:77px 63px; height:63px; margin-right:auto; text-indent:-9999px; width:77px; }
+
+.fg-logo { background: image-url('media/logo-fg.svg'); background-size:134px 17px; display:inline-block; height:17px; margin-left:0.25rem; text-indent:-9999px; width:134px; }
+
+.fg-banner { background: image-url('media/bg-curve.svg'); background-position:50% 100%; background-size:1480px 638px; padding-bottom:4rem; padding-top:12rem }
+.fg-photo { background: image-url('media/photo-7a.jpg'); background-position:50% 50%; background-repeat:no-repeat; height:480px; position:relative; margin-top:-8rem; z-index:-1 }
+
+.fg-primary { color:$color-primary; }
+.fg-secondary { color:$color-secondary; }
+.fg-text-d { color:$color-text-dark; }
+.fg-text-l { color:$color-text-light; }
+
+.fg-bg-primary { background-color:$color-primary; }
+.fg-bg-secondary { background-color:$color-secondary; }
+
+// Not small
+@media screen and (min-width:30em) {
+  .fg-block { border:solid 0.25rem #f2f2f2; border-radius:0.5rem }
+  .fg-block--top { border-bottom:0; border-bottom-left-radius:0; border-bottom-right-radius:0 }
+  .fg-block--bottom { border-top:0; border-top-left-radius:0; border-top-right-radius:0 }
+  .fg-block__row { align-items:center; display:flex }
+}
+.fg-block-hr { background:#f2f2f2; height:2px }
+
+.fg-lottie { height:100px; width:100px; }
+
+#mc_embed_signup form { padding:0 }
+#mc_embed_signup .mc-field-group { padding-bottom:0 }
+#mc_embed_signup #mc-embedded-subscribe { border:0; margin:1em 0 0 }
+#mc_embed_signup div#mce-responses { margin:0; padding:0 }
+#mc_embed_signup div.response { padding:0 }

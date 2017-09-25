@@ -1,34 +1,106 @@
-%main.main
-  %section.mainstory
-    %h1
-      Pairing willing helpers with people with a disability to make commuting by public transport more comfortable and less stressful.
-  %section.product
-    =image_tag "app-grabs/knows-you-are-coming.png", :alt => "Lend a hand help"
+/ Header
+.cf.w-100.fixed.ph4.pv3.ph6-l.bg-white.fg-header
+  %a.fg-lah-logo Lend A Hand logo
+  %a.f6.br2.ph4.pv3.link.white.dim.fg-bg-secondary.fg-interested{:href => "#sign-up"} I’m interested
+/ Banner
+.cf.ph4.pt3.ph7-l.fg-banner
+  %h1.f1.mv0.fg-primary Lend A Hand
+  %p.f4.lh-copy.measure-narrow.fg-text-l We’re making public transport more comfortable and less stressful for people with a disability by pairing them up with helpful travel companions.
+/ Photo
+.cf.ph4.pa6.pa7-l.cover.fg-photo
+/ Intro
+.cf.ph4.pv4.ph6-l.pv5-l
+  .fl.w-two-thirds-ns
+    %p.lh-copy.measure
+      Access to public transport in NSW is constantly improving, with various works are in progress to improve access for all customers. In fact, 83% of NSW train customers currently already have access to wheelchair-accessible stations.
+      %sup 1
+    %p.lh-copy.measure However, many people with a disability are still choosing to travel with other modes of transport such as taxis. Using public transport is still a difficult and intimidating exercise.
+    %p
+  .fl.pl4.w-third-ns
+    %p.f6.lh-copy.measure-narrow.fg-text-l
+      %span.db.f2.b.fg-primary 564,000
+      people living with a disability in NSW have access to public transport but do not use it. That’s more than a third of the 1.36 million people with a disability in the state.
+      %sup 2
+/ Partnerships
+.cf.ph4.pv4.ph6-l.pv5-l.bg-white
+  %h2.mt0.f2.lh-title.measure-narrow.fg-primary Lend A Hand connects people with mobility needs to commuters who are already travelling on the same journey.
+  %p.lh-copy.measure-wide
+    We are doing this by making Lend A Hand a part of an organisation’s corporate social responsibility program. This empowers employees to volunteer more regularly and at the time that suits them. In fact, sustained volunteering has also been associated with better mental health.
+    %sup 3
 
-  %section.interest
-    = link_to "I'm interested!", new_research_answer_path, class: 'button'
-
-  %section.stories
-    .story
-      %p
-        Most of us benefit from easy access to public transportation to get around our cities cheaply and easily. 
-        %span Yet half of the 1.36 million people living in NSW with a disability don’t use public transport.
-    .story
-      %p
-        We’ve been speaking to people with disabilities about this and have heard that despite it being expensive to use other transport options like cars and taxis, and despite the fact that in some instances it leads to social isolation 
-        %span - it can be really difficult, uncomfortable and stressful for people with disabilities to navigate our public transport network.
-  %section.full
-    %p.question
-      Are you someone with a disability who finds taking public transport uncomfortable, difficult or stressful?
-    %p.question
-      Are you someone who would be willing to accompany someone with a disability taking the same route as you to help them feel more comfortable, less stressed and more supported?
-  %section.bottom
-    %section.product.small
-      =image_tag "app-grabs/home-screen.png", :alt => "Lend a hand home"
-    .story
-      %p
-        We are building a platform that will connect every day commuters willing to help someone with a disability on their trip.
-    %section.interest
-      %p
-        We are working on a solution and need your help to show that there are people out there interested in participating!
-      = link_to "I'm interested!", new_research_answer_path, class: 'button'
+/ Works
+.cf.ph4.pt4.ph6-l.pt5-l
+  %h2.f2.lh-title.mt0.fg-primary How does it work?
+.cf.mh4-m.mh6-l.ph4.ph5-l.bg-white.fg-block.fg-block--top
+  .cf.fg-block__row
+    .fl.pr5-ns.w-100.w-50-ns
+      %h4.f4.lh-title.normal.mb0.fg-text-d For travel volunteers
+      %p.lh-copy Use Lend A Hand to offer help to people with a disability who are travelling to the same place and at the same time as you.
+    .fl.w-100.w-50-ns
+      =image_tag("media/phone-helper.png", class: 'center fl-ns mw-100')
+.cf.mv4.mv0-ns.mh4-m.mh6-l.fg-block-hr
+.cf.mh4-m.mh6-l.ph4.ph5-l.bg-white.fg-block.fg-block--bottom
+  .cf.fg-block__row
+    .fl.w-100.w-50-ns
+      = image_tag("media/phone-traveller.png", class: 'center fl-ns mw-100')
+    .fl.pl5-ns.w-100.w-50-ns
+      %h4.f4.lh-title.normal.mb0.fg-text-d For people who use wheelchairs
+      %p.lh-copy Plan ahead with the Lend A Hand app by viewing timetables and station accessibility information. We’ll notify you as soon as a traveller is able to help you on your journey.
+/ Features
+.cf.pa4.ph6-l.pv5-l
+  %p.cf.fl-ns.w-third-ns.ph4.f6.tc.fg-text-l
+    %span#lottie1.db.center.fg-lottie>
+    Travellers can choose the help offered to them
+  %p.cf.fl-ns.w-third-ns.ph4.f6.tc.fg-text-l
+    %span#lottie2.db.center.fg-lottie>
+    Chat securely between travellers and helpers
+  %p.cf.fl-ns.w-third-ns.ph4.f6.tc.fg-text-l
+    %span#lottie3.db.center.fg-lottie>
+    Helpers receive feedback&#x2028; from travellers
+/ Partner
+#sign-up.cf.mh4-m.mh6-l.ph4.ph5-l.pv4.bg-white.fg-block
+  %h2.mt0.f2.lh-title.fg-primary Want to partner with us?
+  %p.mb3.lh-copy
+    We’re looking for partner organisations!&#x2028;
+    %br>/
+    Sign up here and we’ll get in touch very soon.
+  .w-two-thirds-ns
+    / Begin MailChimp Signup Form
+    #mc_embed_signup
+      %form#mc-embedded-subscribe-form.validate{:action => "//wearefuturegov.us1.list-manage.com/subscribe/post?u=8164ad56924f0b0739b2e18ed&id=5050a0cd1c", :method => "post", :name => "mc-embedded-subscribe-form", :novalidate => "", :target => "_blank"}
+        #mc_embed_signup_scroll
+          .mc-field-group
+            / <label for="mce-EMAIL">Email address </label>
+            %input#mce-EMAIL.required.email{:name => "EMAIL", :placeholder => "Email address", :type => "email", :value => ""}/
+          .mc-field-group.input-group
+            %ul
+              %li
+                %input#mce-ORGTYPE-0{:name => "ORGTYPE", :type => "radio", :value => "My organisation works with people who need help"}/
+                %label.ml3.f6{:for => "mce-ORGTYPE-0"} My organisation works with people who need help
+              %li
+                %input#mce-ORGTYPE-1{:name => "ORGTYPE", :type => "radio", :value => "My organisation can provide helpers"}/
+                %label.ml3.f6{:for => "mce-ORGTYPE-1"} My organisation can provide helpers
+          #mce-responses.clear
+            #mce-error-response.response{:style => "display:none"}
+            #mce-success-response.response{:style => "display:none"}
+          / real people should not fill this in and expect good things - do not remove this or risk form bot signups
+          %div{"aria-hidden" => "true", :style => "position: absolute; left: -5000px;"}
+            %input{:name => "b_0722e874f327ef374df6a0fef_6b937e1d78", :tabindex => "-1", :type => "text", :value => ""}/
+          .clear
+            %input#mc-embedded-subscribe.f6.br2.ph4.pv3.link.white.fg-bg-secondary.dim{:name => "subscribe", :type => "submit", :value => "Sign up"}/
+    %script{:src => "//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js", :type => "text/javascript"}
+    :javascript
+      (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ORGTYPE';ftypes[3]='radio';}(jQuery));var $mcj = jQuery.noConflict(true);
+    / End mc_embed_signup
+/ References and footer
+.cf.mt5.ph4.pv4.ph6-l.pv5-l.f6.bg-white
+  %p.f7.fg-text-l References
+  = succeed "\u{2028}" do
+    %ol.f7.fg-text-l
+      %li Transport for NSW Annual Report 2015-2016, p. 85
+      %li Australian Bureau of Statistics: Disability, Ageing and Carers, Australia: Summary of Findings, 2015, Table 22.1
+      %li Musick, M. A. and Wilson, J. 2003, ‘Volunteering and depression: the role of psychological and social resources in different age groups’, Social Science and Medicine, vol. 56, p. 267
+  %hr.bt.b--near-white/
+  %p.fr
+    A proud initiative by
+    %span.fg-logo FutureGov
