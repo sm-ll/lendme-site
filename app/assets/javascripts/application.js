@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require validate-mailchimp
 //= require bodymovin_light.min
 //= require page-scroll
 //= require animate-icons
