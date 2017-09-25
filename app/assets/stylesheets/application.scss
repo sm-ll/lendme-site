@@ -2,14 +2,14 @@
 @import 'tachyons/mailchimp.css';
 
 
-// $font:'Lato', sans-serif;
+$font: Lato, sans-serif;
 $color-primary:#18cca4;
 $color-secondary:#4b06b7;
 $color-text-dark:#494745;
 $color-text-light:#948f8b;
 
 
-body { background:#fafafa; color:$color-text-dark; }
+body { background:#fafafa; color:$color-text-dark; font-family: $font}
 
 .fg-header { align-items:center; display:flex; z-index:1; }
 .fg-lah-logo { background: image-url('media/logo.svg'); background-size:77px 63px; height:63px; margin-right:auto; text-indent:-9999px; width:77px; }
@@ -37,9 +37,3 @@ body { background:#fafafa; color:$color-text-dark; }
 .fg-block-hr { background:#f2f2f2; height:2px }
 
 .fg-lottie { height:100px; width:100px; }
-
-#mc_embed_signup form { padding:0 }
-#mc_embed_signup .mc-field-group { padding-bottom:0 }
-#mc_embed_signup #mc-embedded-subscribe { border:0; margin:1em 0 0 }
-#mc_embed_signup div#mce-responses { margin:0; padding:0 }
-#mc_embed_signup div.response { padding:0 }
