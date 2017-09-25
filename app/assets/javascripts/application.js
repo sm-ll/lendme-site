@@ -11,6 +11,7 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery_ujs
 //= require turbolinks
 //= require bodymovin_light.min
 //= require page-scroll
