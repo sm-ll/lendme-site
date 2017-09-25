@@ -1,22 +1,10 @@
 (function() {
 
   // https://pawelgrzybek.com/page-scroll-in-vanilla-javascript/
-  function scrollIt(destination, duration = 200, easing = 'linear', callback) {
+  function scrollIt(destination, duration, callback) {
 
-    const easings = {
-      linear(t) { return t; },
-      easeInQuad(t) { return t * t; },
-      easeOutQuad(t) { return t * (2 - t); },
-      easeInOutQuad(t) { return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t; },
-      easeInCubic(t) { return t * t * t; },
-      easeOutCubic(t) { return (--t) * t * t + 1; },
-      easeInOutCubic(t) { return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1; },
-      easeInQuart(t) { return t * t * t * t; },
-      easeOutQuart(t) { return 1 - (--t) * t * t * t; },
-      easeInOutQuart(t) { return t < 0.5 ? 8 * t * t * t * t : 1 - 8 * (--t) * t * t * t; },
-      easeInQuint(t) { return t * t * t * t * t; },
-      easeOutQuint(t) { return 1 + (--t) * t * t * t * t; },
-      easeInOutQuint(t) { return t < 0.5 ? 16 * t * t * t * t * t : 1 + 16 * (--t) * t * t * t * t; }
+    if(duration == null){
+      duration = 200;
     };
 
     const start = window.pageYOffset;
@@ -38,7 +26,7 @@
     function scroll() {
       const now = 'now' in window.performance ? performance.now() : new Date().getTime();
       const time = Math.min(1, ((now - startTime) / duration));
-      const timeFunction = easings[easing](time);
+      const timeFunction =   easeIt(time);
       window.scroll(0, Math.ceil((timeFunction * (destinationOffsetToScroll - start)) + start));
 
       if (window.pageYOffset === destinationOffsetToScroll) {
@@ -48,6 +36,10 @@
       }
 
       requestAnimationFrame(scroll);
+    }
+
+    function easeIt(time) {
+      return (time < 0.5) ? (2 * time * time) : (-1 + (4 - 2 * time) * time);
     }
 
     scroll();
@@ -65,7 +57,7 @@
     );
   }
 
-  // Ready
+  // // Ready
   document.addEventListener("DOMContentLoaded", function(){
 
     // Animate lotties
@@ -106,9 +98,11 @@
         for (i = 0; i < lotties.length; i++) animateLottie(i);
       }
     });
+  });
 
     // Interest button click and scoll
-    document.querySelector('.fg-interested').addEventListener('click', () =>
-      scrollIt(document.getElementById('sign-up').offsetTop - 120, 1000, 'easeInOutQuad'));
-  });
-})();
+  document.querySelector('.fg-interested').addEventListener('click', function() {
+      scrollIt(document.getElementById('sign-up').offsetTop - 120, 1000);
+    }
+  );
+});
