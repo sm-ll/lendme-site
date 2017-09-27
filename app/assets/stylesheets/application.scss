@@ -1,39 +1,33 @@
 @import './tachyons/tachyons.min';
 @import './tachyons/mailchimp';
 
-
 $font: Lato, sans-serif;
-$color-primary:#18cca4;
-$color-secondary:#4b06b7;
-$color-text-dark:#494745;
-$color-text-light:#948f8b;
 
+body { background:#fafafa; color:#494745; font-family: $font}
 
-body { background:#fafafa; color:$color-text-dark; font-family: $font}
+.fg-header{align-items:center;display:flex;z-index:1}
+.fg-lah-logo{background:image-url('media/logo.svg');background-size:77px 63px;height:63px;margin-right:auto;text-indent:-9999px;width:77px}
+.fg-logo{background:image-url('media/logo-fg.svg');background-size:134px 17px;display:inline-block;height:17px;margin-left:0.25rem;text-indent:-9999px;width:134px}
+.fg-banner{background:image-url('media/bg-curve.svg');background-position:50% 100%;background-size:1480px 638px;padding-bottom:4rem;padding-top:8rem}
+.fg-intro{max-width:28rem}
+.fg-photo{position:relative;margin-top:-2rem;z-index:-1}
 
-.fg-header { align-items:center; display:flex; z-index:1; }
-.fg-lah-logo { background: image-url('media/logo.svg'); background-size:77px 63px; height:63px; margin-right:auto; text-indent:-9999px; width:77px; }
-
-.fg-logo { background: image-url('media/logo-fg.svg'); background-size:134px 17px; display:inline-block; height:17px; margin-left:0.25rem; text-indent:-9999px; width:134px; }
-
-.fg-banner { background: image-url('media/bg-curve.svg'); background-position:50% 100%; background-size:1480px 638px; padding-bottom:4rem; padding-top:12rem }
-.fg-photo { background: image-url('media/photo-7a.jpg'); background-position:50% 50%; background-repeat:no-repeat; height:480px; position:relative; margin-top:-8rem; z-index:-1 }
-
-.fg-primary { color:$color-primary; }
-.fg-secondary { color:$color-secondary; }
-.fg-text-d { color:$color-text-dark; }
-.fg-text-l { color:$color-text-light; }
-
-.fg-bg-primary { background-color:$color-primary; }
-.fg-bg-secondary { background-color:$color-secondary; }
-
-// Not small
-@media screen and (min-width:30em) {
-  .fg-block { border:solid 0.25rem #f2f2f2; border-radius:0.5rem }
-  .fg-block--top { border-bottom:0; border-bottom-left-radius:0; border-bottom-right-radius:0 }
-  .fg-block--bottom { border-top:0; border-top-left-radius:0; border-top-right-radius:0 }
-  .fg-block__row { align-items:center; display:flex }
+@media screen and (min-width: 30em){
+  .fg-photo{margin-top:-8rem}
 }
-.fg-block-hr { background:#f2f2f2; height:2px }
+.fg-primary{color:#18cca4}
+.fg-secondary{color:#4b06b7}
+.fg-text-d{color:#494745}
+.fg-text-l{color:#948f8b}
+.fg-bg-primary{background-color:#18cca4}
+.fg-bg-secondary{background-color:#4b06b7}
 
-.fg-lottie { height:100px; width:100px; }
+@media screen and (min-width: 30em){
+  .fg-block{border:solid 0.25rem #f2f2f2;border-radius:0.5rem}
+.fg-block--top{border-bottom:0;border-bottom-left-radius:0;border-bottom-right-radius:0}
+.fg-block--bottom{border-top:0;border-top-left-radius:0;border-top-right-radius:0}
+.fg-block__row{align-items:center;display:flex}
+}
+.fg-block-hr{background:#f2f2f2;height:0}@media screen and (min-width: 30em){
+  .fg-block-hr{height:2px}}
+.fg-lottie{height:100px;width:100px}
